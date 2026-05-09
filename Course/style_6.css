@@ -1,0 +1,70 @@
+/*
+@font-face {
+    font-family: storm_gust;
+    src: url(Storm\ Gust.ttf);
+}
+*/
+
+@font-face {
+    font-family: love;
+    src: url(./Lucy\ Said\ Ok\ Personal\ Use.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* 
+h1 {
+    color: white;
+    background-color: rgb(68, 84, 254);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+    font-family: love;
+}
+*/
+
+/*
+div {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right bottom, red, blue);
+    background: radial-gradient(lightblue, royalblue);
+    background: conic-gradient(red, blue);
+    background-image: url(https://images.unsplash.com/photo-1773062189964-75a471b19934?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+*/
+
+div {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1776549821153-070eaa245bc1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: 0 30%;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: left;
+    font-family: love;
+    color: white;
+}
+
