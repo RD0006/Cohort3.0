@@ -8,3 +8,292 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #0a0a0a;
+    color: #ffffff;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.site-title {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.title-divider {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.title-divider svg svg {
+    color: #ff8c42;
+}
+
+.drinks-section {
+    padding: 20px 40px;
+    flex-grow: 1;
+}
+
+.drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.drink-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 140, 66, 0.2);
+    border-radius: 12px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.drink-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 140, 66, 0.4);
+    transform: translateY(-4px);
+}
+
+.drink-card.signature {
+    border-color: rgba(255, 140, 66, 0.5);
+    background: rgba(255, 140, 66, 0.05);
+}
+
+.drink-card.new {
+    border-color: rgba(255, 140, 66, 0.5);
+    background: rgba(255, 140, 66, 0.05);
+}
+
+.card-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 6px 12px;
+    background: rgba(255, 140, 66, 0.15);
+    border: 1px solid rgba(255, 140, 66, 0.4);
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #ff8c42;
+    z-index: 1;
+}
+
+.drink-image {
+    height: 300px;
+    width: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.drink-name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.drink-description {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+}
+
+.drink-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ff8c42;
+    letter-spacing: 0.5px;
+}
+
+
+.chef-special {
+    width: 1000px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(25, 25, 25, 0.8) 100%);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 140, 66, 0.2);
+}
+
+.chef-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.dish-image {
+    height: 250px;
+    width: auto;
+    border-radius: 32px;
+}
+
+.chef-text {
+    padding-left: 10%;
+    width: 60%;
+}
+
+.chef-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #ff8c42;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.chef-title {
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.chef-subtitle {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 16px;
+    letter-spacing: 0.3px;
+}
+
+.chef-description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin-bottom: 28px;
+    letter-spacing: 0.3px;
+}
+
+.explore-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border: 1px solid #ff8c42;
+    background: transparent;
+    color: #ff8c42;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.explore-button:hover {
+    background: rgba(255, 140, 66, 0.1);
+    transform: translateX(4px);
+}
+
+.footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);    
+    border-top: 1px solid rgba(255, 140, 66, 0.2);
+    padding: 36px 40px;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-copy {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.3px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+    letter-spacing: 0.3px;
+}
+
+.footer-links a:hover {
+    color: #ff8c42;
+}
+
+.divider {
+    color: #ff8c42;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.social-label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.3px;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 140, 66, 0.1);
+    border: 1px solid rgba(255, 140, 66, 0.3);
+    border-radius: 999px;
+    color: #ff8c42;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.social-icon svg {
+    height: 20px;
+}
+
+.social-icon:hover {
+    background: rgba(255, 140, 66, 0.2);
+    border-color: rgba(255, 140, 66, 0.6);
+}
+
