@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(135deg, #2d1b4e 0%, #1a0f3d 50%, #0d0620 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.see-all {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
+
+.see-all:hover {
+    opacity: 0.7;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.art-card {
+    position: relative;
+    flex: 1 1 calc(25% - 23px);
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: rgba(100, 50, 150, 0.2);
+    border: 2px solid rgba(150, 100, 200, 0.3);
+    border-radius: 32px;
+}
+
+.image-wrapper {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+
+.image-wrapper img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+
+.likes {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: transparent;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.likes svg {
+    display: inline;
+    height: 12px;
+}
+
+.art-card h3 {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+.bid-button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #9333ea;
+    padding: 12px 24px;
+    border-radius: 999px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.bid-button:hover {
+    background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%);
+    border-color: #7e22ce;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+}
