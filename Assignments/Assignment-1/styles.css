@@ -1,3 +1,10 @@
+:root {
+    --grass: rgb(48, 130, 0);
+    --dark: rgb(93, 90, 90);
+    --fire: rgb(252, 105, 37);
+    --water: rgb(32, 150, 247);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +21,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
 	color: #1c2130;
+    background-color: whitesmoke;
 }
 
 button,
@@ -30,6 +38,7 @@ input {
     align-items: center;
     justify-content: space-between;
     gap: 12px;
+    margin-bottom: 20px;
 }
 
 .pokemon-title img {
@@ -40,6 +49,22 @@ input {
 svg {
 	height: 25px;
 	width: auto;
+}
+
+.type-grass {
+    color: var(--grass);
+}
+
+.type-dark {
+    color: var(--dark);
+}
+
+.type-fire {
+    color: var(--fire);
+}
+
+.type-water {
+    color: var(--water);
 }
 
 .navbar {
@@ -136,18 +161,6 @@ svg {
     justify-content: space-between;
 }
 
-.pokemon-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-        circle at top,
-        rgba(255, 255, 255, 0.5),
-        transparent 35%
-    );
-    pointer-events: none;
-}
-
 .card-top {
     display: flex;
     justify-content: space-between;
@@ -159,13 +172,27 @@ svg {
     font-weight: 700;
 }
 
+.go-to,
 .favorite {
 	position: absolute;
-	top: 5px;
-	right: 10px;
-	color: #6c7b9b;
     background: transparent;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.favorite {
+	color: #6c7b9b;
+    top: 10px;
+	right: 10px;
+}
+
+.go-to {
+    color: black;
+    bottom: 20px;
+	right: 10px;
+}
+
+.go-to svg {
     cursor: pointer;
 }
 
@@ -226,6 +253,8 @@ svg {
         rgba(255, 255, 255, 0.9),
         rgba(255, 255, 255)
     );
+    border-bottom: var(--grass) 5px solid;
+
 }
 
 .pokemon-card.dark {
@@ -234,6 +263,7 @@ svg {
         rgba(255, 255, 255, 0.9),
         rgba(255, 255, 255)
     );
+    border-bottom: var(--dark) 5px solid;
 }
 
 .pokemon-card.fire {
@@ -242,6 +272,7 @@ svg {
         rgba(255, 255, 255, 0.9),
         rgba(255, 255, 255)
     );
+    border-bottom: var(--fire) 5px solid;
 }
 
 .pokemon-card.water {
@@ -250,6 +281,11 @@ svg {
         rgba(255, 255, 255, 0.9),
         rgba(255, 255, 255)
     );
+    border-bottom: var(--water) 5px solid;
+}
+
+.pokemon-card .svg-span{
+    background: rgba(54, 83, 255, 0.08);
 }
 
 .feature-bar {
@@ -285,6 +321,26 @@ svg {
 .feature p {
     color: #5f6d8b;
     line-height: 1.5;
+}
+
+#svg-explore {
+    color: rgb(0, 0, 110);
+    background: rgba(0, 0, 110, 0.1);
+}
+
+#svg-filter {
+    color: rgb(0, 128, 0);
+    background-color: rgba(0, 128, 0, 0.1);
+}
+
+#svg-collection {
+    color: rgb(255, 214, 0);
+    background-color: rgba(255, 214, 0, 0.1);
+}
+
+#svg-stats {
+    color: rgb(133, 0, 114);
+    background-color: rgba(133, 0, 114, 0.1);
 }
 
 footer {
