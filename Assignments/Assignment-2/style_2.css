@@ -32,13 +32,13 @@ body {
     font-size: 48px;
     font-weight: 300;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .title-divider {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 6px;
 }
 
 .title-divider svg svg {
@@ -82,17 +82,11 @@ body {
     background: rgba(255, 140, 66, 0.05);
 }
 
-.drink-card.new {
-    border-color: rgba(255, 140, 66, 0.5);
-    background: rgba(255, 140, 66, 0.05);
-}
-
 .card-badge {
     position: absolute;
     top: 14px;
     left: 14px;
     padding: 6px 12px;
-    background: rgba(255, 140, 66, 0.15);
     border: 1px solid rgba(255, 140, 66, 0.4);
     border-radius: 20px;
     font-size: 11px;
