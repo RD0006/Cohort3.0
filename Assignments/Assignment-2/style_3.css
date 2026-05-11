@@ -8,3 +8,153 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 32px;
+    color: #2f0405;
+    background: #f4f2f1;
+}
+
+.page-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 44px;
+}
+
+.brand-mark {
+    font-size: 2.5rem;
+    color: orangered;
+    line-height: 1;
+    width: 5%;
+
+}
+
+.small-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: right;
+    color: #7e4f4f;
+    font-size: 0.85rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    width: 10%;
+}
+
+h1 {
+    font-size: clamp(3rem, 5vw, 6.2rem);
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+    color: #430104;
+    max-width: 900px;
+    margin-bottom: 28px;
+    width: 60%;
+}
+
+.accent {
+    color: #9f8988;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 56px;
+}
+
+.description p {
+    display: block;
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.2;
+    color: #430104;
+    letter-spacing: 0.01em;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.side-links a {
+    color: #430104;
+    text-decoration: none;
+    font-size: 1.05rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-bottom: 1px solid currentColor;
+    width: fit-content;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 72px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+        
+}
+.card {
+    overflow: hidden;
+    border-radius: 28px;
+    background: #1c0a0b;
+    box-shadow: 0 40px 120px rgba(72, 12, 14, 0.18);
+}
+
+.card img {
+    height: 400px;
+    width: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.bottom-callout {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.bottom-callout h2 {
+    font-size: clamp(2.4rem, 4vw, 5rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+    color: #430104;
+    margin-bottom: 24px;
+}
+
+.bottom-callout h2 .accent {
+    color: #9f8988;
+}
+
+.bottom-callout p {
+    color: #430104;
+    font-size: 1rem;
+    line-height: 1.2;
+    width: 46%;
+}
+
