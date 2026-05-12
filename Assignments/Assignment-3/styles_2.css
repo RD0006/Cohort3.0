@@ -73,34 +73,6 @@ header svg {
     cursor: pointer;
 }
 
-.social-icons {
-    height: 100%;
-    width: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    justify-content: center;
-    gap: 20px;
-    position: relative;
-    z-index: 10;
-}
-
-.social-icon {
-    height: 20px;
-    width: auto;
-}
-
-.social-icon svg {
-    height: 20px;
-    width: 20px;
-    color: rgb(186, 7, 94);
-}
-
-#logo-left {
-    height: 150px;
-    width: auto;
-}
-
 #section-1 {
     display: flex;
     flex-wrap: wrap;
@@ -115,6 +87,32 @@ header svg {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+#logo-left {
+    height: 150px;
+    width: auto;
+}
+
+.left-logo-div {
+    position: relative;
+}
+
+.left-logo-div svg {
+    position: absolute;
+    height: 50px;
+}
+
+#star-1 {
+    color: royalblue;
+    top: 10px;
+    right: 0px;
+}
+
+#star-2 {
+    color: yellow;
+    bottom: 10px;
+    left: 0px;
 }
 
 .left {
@@ -158,10 +156,49 @@ header svg {
 
 .play-now {
     background: linear-gradient(to right, rgb(186, 7, 94), rgb(236, 121, 28));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.play-now svg {
+    height: 25px;
 }
 
 .watch-trailer {
     border: 2px solid rgb(186, 7, 94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.watch-trailer svg {
+    height: 25px;
+}
+
+.social-icons {
+    height: 100%;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.social-icon {
+    height: 20px;
+    width: auto;
+}
+
+.social-icon svg {
+    height: 20px;
+    width: 20px;
+    color: rgb(186, 7, 94);
 }
 
 #section-2 {
