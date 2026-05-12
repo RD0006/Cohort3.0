@@ -67,7 +67,8 @@ nav {
 
 
 .bottom {
-    position: relative;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     background: rgba(40, 0, 59, 1);
     backdrop-filter: blur(8px);
@@ -76,8 +77,19 @@ nav {
     border-radius: 8px;
     padding: 8px 14px;
     color: #ffffff;
-    padding: 30px;
+    padding: 10px 30px 30px;
 }
+
+.center {
+    position: absolute;
+    top: 310px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(40, 0, 59, 1);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 50% 50%);
+}
+
 
 .bottom h2 {
     text-align: center;
@@ -109,13 +121,20 @@ h1 {
 }
 
 .top-text {
-    width: 40%;
+    width: 55%;
     font-weight: bold;
     text-align: left;
 }
 
 .bottom-text {
-    width: 40%;
+    width: 55%;
     font-weight: bold;
     text-align: right;
+}
+
+.warrior {
+    position: fixed;
+    top: 70px;
+    height: 500px;
+    width: auto;
 }
