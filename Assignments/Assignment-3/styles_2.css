@@ -8,3 +8,202 @@ html, body {
     height: 100%;
     width: 100%;
 }
+
+body {
+    background:
+    radial-gradient(circle at 20% 90%, rgba(255, 0, 102, 0.45), transparent 50%),
+    radial-gradient(circle at 85% 15%, rgba(111, 0, 255, 0.35), transparent 35%),
+    radial-gradient(circle at 50% 50%, rgba(255, 63, 210, 0.12), transparent 45%),
+    linear-gradient(
+      135deg,
+      #12030a 0%,
+      #1a0620 40%,
+      #22001c 70%,
+      #0f0212 100%
+    );
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    padding-bottom: 60px;
+}
+
+header {
+    height: min-content;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    height: 80px;
+    width: auto;
+}
+
+nav {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+nav a.active {
+    text-decoration: underline;
+    color: white;
+    text-decoration-color: rgb(186, 7, 94);
+    text-decoration-thickness: 1px;
+    
+}
+
+header svg {
+    height: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.social-icons {
+    height: 100%;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.social-icon {
+    height: 20px;
+    width: auto;
+}
+
+.social-icon svg {
+    height: 20px;
+    width: 20px;
+    color: rgb(186, 7, 94);
+}
+
+#logo-left {
+    height: 150px;
+    width: auto;
+}
+
+#section-1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left, 
+.right {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    flex-direction: column;
+}
+
+.right {
+    position: relative;
+}
+
+.description {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 2;
+    color: white;
+}
+
+.buttons {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    cursor: pointer;
+}
+
+.buttons div {
+    width: 34%;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+#guard {
+    height: 400px;
+    width: auto;
+}
+
+.play-now {
+    background: linear-gradient(to right, rgb(186, 7, 94), rgb(236, 121, 28));
+}
+
+.watch-trailer {
+    border: 2px solid rgb(186, 7, 94);
+}
+
+#section-2 {
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 84%;
+    z-index: 6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur;
+    padding: 30px;
+    border-radius: 32px;
+}
+
+.episode {
+    width: 32%;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 8px;
+    position: relative;
+}
+
+.episode img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.episode svg {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur;
+    border-radius: 999px;
+    z-index: 8;
+    color: white;
+    cursor: pointer;
+}
