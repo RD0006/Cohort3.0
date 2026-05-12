@@ -10,10 +10,13 @@ html, body {
 }
 
 body {
-    background: linear-gradient(135deg, #2d1b4e 0%, #1a0f3d 50%, #0d0620 100%);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #41105a 20%, #1a0f3d 50%, #41105a 80%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
-    min-height: 100vh;
 }
 
 .container {
@@ -64,9 +67,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background: rgba(100, 50, 150, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur;
     border: 2px solid rgba(150, 100, 200, 0.3);
     border-radius: 32px;
+    justify-content: center;
 }
 
 .image-wrapper {
@@ -74,14 +79,19 @@ body {
     border-radius: 16px;
     overflow: hidden;
     aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .image-wrapper img {
-    width: auto;
+    width: 200px;
     height: 200px;
     object-fit: cover;
     display: block;
     object-position: center;
+    margin-top: 20px;
+    border: 2px solid whitesmoke;
+    border-radius: 32px;
 }
 
 .likes {
@@ -110,6 +120,7 @@ body {
 }
 
 .bid-button {
+    width: 150px;
     background: transparent;
     color: #fff;
     border: 2px solid #9333ea;
@@ -117,11 +128,13 @@ body {
     border-radius: 999px;
     margin: 10px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.5px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
+    text-align: center;
+    align-self: center;
 }
 
 .bid-button:hover {
