@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding-left: 12px;
+    padding-top: 12px;
+
+    display: grid;
+    
+    grid-template-columns: calc(20% - 12px) calc(30% - 12px) calc(30% - 12px) calc(20% - 12px);
+    grid-template-rows: calc(33% - 12px) calc(20% - 12px) calc(22% - 12px) calc(25% - 12px);
+
+    grid-template-areas:
+        "left-top top-center-1 top-center-2 right-top"
+        "left-top center center right-top"
+        "left-center center center right-bottom"
+        "left-bottom left-bottom bottom-center right-bottom"
+    ;
+    gap: 12px;
+}
+
+.left-top {
+    background-image: url("https://im.whatshot.in/img/2022/Nov/istock-901960792-61b7146334820-1667548399.jpeg");
+    background-size: cover;
+    grid-area: left-top;
+    border-radius: 25px;
+}
+
+.left-center {
+    background-color: lightgreen;
+    grid-area: left-center;
+    border-radius: 25px;
+}
+
+.left-bottom {
+    background-color: crimson;
+    grid-area: left-bottom;
+    border-radius: 25px;
+}
+
+.right-top {
+    background-color: palevioletred;
+    grid-area: right-top;
+    border-radius: 25px;
+}
+
+.right-bottom {
+    background-image: url("https://1710media.com/wp-content/uploads/2025/08/Artict-Bio-scaled-e1754382866450.jpg");
+    background-size: cover;
+    background-color: lightseagreen;
+    grid-area: right-bottom;
+    border-radius: 25px;
+}
+
+.top-center-1 {
+    background-color: mediumpurple;
+    grid-area: top-center-1;
+    border-radius: 25px;
+}
+
+.top-center-2 {
+    background-color: orange;
+    grid-area: top-center-2;
+    border-radius: 25px;
+}
+
+.center {
+    background-color: tan;
+    grid-area: center;
+    border-radius: 25px;
+}
+
+.bottom-center {
+    background-color: coral;
+    grid-area: bottom-center;
+    border-radius: 25px;
+}
+
