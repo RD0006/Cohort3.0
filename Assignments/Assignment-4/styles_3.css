@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding-left: 25px;
+    padding-top: 25px;
+
+    display: grid;
+    
+    grid-template-columns: calc(5% - 25px) calc(45% - 25px) calc(20% - 25px) calc(15% - 25px) calc(15% - 25px);
+    grid-template-rows: calc(25% - 25px) calc(45% - 25px) calc(30% - 25px);
+
+    grid-template-areas:
+        "nav about-me heading heading heading"
+        "nav about-me center center right-center"
+        "nav about-me bottom-center right-bottom right-bottom"
+    ;
+    gap: 25px;
+}
+
+nav {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    background-color: burlywood;
+    grid-area: nav;
+}
+
+.about-me {
+    background-color: crimson;
+    grid-area: about-me;
+}
+
+.heading {
+    background-color: aqua;
+    grid-area: heading;
+}
+
+.center {
+    background-color: antiquewhite;
+    grid-area: center;
+}
+
+.right-center {
+    background-color: green;
+    grid-area: right-center;
+}
+
+.bottom-center {
+    background-color: yellow;
+    grid-area: bottom-center;
+}
+
+.right-bottom {
+    background-color: gray;
+    grid-area: right-bottom;
+}
