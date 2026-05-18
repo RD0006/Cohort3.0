@@ -21,7 +21,7 @@ main {
     display: grid;
     
     grid-template-columns: calc(5% - 25px) calc(45% - 25px) calc(20% - 25px) calc(15% - 25px) calc(15% - 25px);
-    grid-template-rows: calc(25% - 25px) calc(45% - 25px) calc(30% - 25px);
+    grid-template-rows: calc(25% - 25px) calc(50% - 25px) calc(25% - 25px);
 
     grid-template-areas:
         "nav about-me heading heading heading"
@@ -68,7 +68,9 @@ nav {
 .center img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25px;
 }
 
 .right-center {
