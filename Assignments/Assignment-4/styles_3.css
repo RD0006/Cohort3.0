@@ -52,8 +52,12 @@ nav {
 }
 
 .heading {
-    background-color: aqua;
+    font-size: 120px;
+    letter-spacing: 5px;
     grid-area: heading;
+
+    display: flex;
+    align-items: center;
 }
 
 .center {
@@ -61,9 +65,54 @@ nav {
     grid-area: center;
 }
 
+.center img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .right-center {
-    background-color: green;
     grid-area: right-center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc-ss {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc-ss span {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.rc-ss div {
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+#rc-ss-1 {
+    background-color: rgb(155, 223, 219);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#rc-ss-2 {
+    color: white;
+    background-color: rgb(182, 138, 226);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .bottom-center {
