@@ -10,9 +10,11 @@ html, body {
 }
 
 main {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: whitesmoke;
     padding-left: 25px;
     padding-top: 25px;
 
@@ -32,8 +34,16 @@ main {
 nav {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    background-color: burlywood;
+    padding-top: 40px;
+    font-weight: 900;
+
     grid-area: nav;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
 }
 
 .about-me {
