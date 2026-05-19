@@ -51,9 +51,42 @@ main {
 }
 
 .left-center {
-    background-color: lightgreen;
+    background-color: whitesmoke;
+    padding: 8px;
     grid-area: left-center;
     border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.left-center #lc-1 {
+    width: 90%;
+    font-weight: bold;
+}
+
+.left-center #lc-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left-center #lc-2 i {
+    padding: 5px;
+    color: yellow;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.left-center #lc-2 div {
+    width: 80%;
+    font-size: small;
+    font-weight: bold;
 }
 
 .left-bottom {
@@ -63,7 +96,7 @@ main {
 }
 
 .right-top {
-    background-color: palevioletred;
+    background-color: whitesmoke;
     grid-area: right-top;
     border-radius: 25px;
 }
@@ -109,15 +142,45 @@ main {
 }
 
 .top-center-1 {
-    background-color: mediumpurple;
+    background: url("top-center-1.png");
+    background-size: cover;
+    padding: 15px;
     grid-area: top-center-1;
     border-radius: 25px;
 }
 
 .top-center-2 {
-    background-color: orange;
+    background-color: whitesmoke;
+    padding: 15px;
     grid-area: top-center-2;
     border-radius: 25px;
+    display: flex;
+    flex-wrap: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 12px;
+}
+
+.top-center-2 span {
+    font-size: 12px;
+}
+
+.top-center-2 #tc-2-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top-center-2 #tc-2-body {
+    font-size: 25px;
+    font-weight: light;
+}
+
+.top-center-2 img {
+    height: 40px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .center {
