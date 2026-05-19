@@ -10,16 +10,17 @@ html, body {
 }
 
 main {
-    height: 100%;
+    height: 120vh;
     width: 100%;
     background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 12px;
     padding-top: 12px;
 
     display: grid;
     
-    grid-template-columns: calc(20% - 12px) calc(30% - 12px) calc(30% - 12px) calc(20% - 12px);
-    grid-template-rows: calc(33% - 12px) calc(20% - 12px) calc(22% - 12px) calc(25% - 12px);
+    grid-template-columns: calc(22% - 12px) calc(28% - 12px) calc(28% - 12px) calc(22% - 12px);
+    grid-template-rows: calc(30% - 12px) calc(18% - 12px) calc(24% - 12px) calc(28% - 12px);
 
     grid-template-areas:
         "left-top top-center-1 top-center-2 right-top"
@@ -31,10 +32,22 @@ main {
 }
 
 .left-top {
+    position: relative;
     background-image: url("https://im.whatshot.in/img/2022/Nov/istock-901960792-61b7146334820-1667548399.jpeg");
     background-size: cover;
     grid-area: left-top;
     border-radius: 25px;
+}
+
+.left-top i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 30px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 999px;
 }
 
 .left-center {
@@ -56,11 +69,43 @@ main {
 }
 
 .right-bottom {
-    background-image: url("https://1710media.com/wp-content/uploads/2025/08/Artict-Bio-scaled-e1754382866450.jpg");
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1571455786673-9d9d6c194f90?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
+    background-position: center;
     background-color: lightseagreen;
     grid-area: right-bottom;
     border-radius: 25px;
+}
+
+.right-bottom span {
+    position: absolute;
+    left: 30px;
+    top: 220px;
+    color: white;
+    font-weight: 900;
+    width: 60%;
+}
+
+.right-bottom i {
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    color: white;
+    font-size: 80px;
+}
+
+.right-bottom div {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    color: black;
+    background-color: yellow;
+    width: 50%;
+    text-align: center;
+    border-radius: 25px;
+    padding: 10px;
+    
 }
 
 .top-center-1 {
@@ -76,14 +121,27 @@ main {
 }
 
 .center {
-    background-color: tan;
+    background-color: rgb(248, 227, 200);
     grid-area: center;
     border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.center i {
+    font-size: 80px;
+}
+
+.center h1 {
+    font-size: 70px;
 }
 
 .bottom-center {
-    background-color: coral;
+    background: url("https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
     grid-area: bottom-center;
     border-radius: 25px;
 }
-

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+     display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100px calc(100% - 200px) 100px;
+}
+
+header {
+    background-color: royalblue;
+}
+
+aside {
+    background-color: palevioletred;
+}
+
+section {
+    background-color: orange;
+}
+
+footer {
+    background-color: lightseagreen;
+}

@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    display: grid;
+    
+    grid-template-columns: 22% 20% 7% 27% 22%;
+    grid-template-rows: 29% 26% 7% 18% 18%;
+
+    grid-template-areas:
+    "left-top top-center-1 top-center-1 top-center-2 right-top"
+    "left-top center center center right-top"
+    "left-bottom center center center right-top"
+    "left-bottom center center center right-bottom"
+    "left-bottom bottom-center-1 bottom-center-2 bottom-center-2 right-bottom"
+    ;
+    gap: 5px;
+}
+
+.left-top {
+    background-color: royalblue;
+    grid-area: left-top;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.left-bottom {
+    background-color: crimson;
+    grid-area: left-bottom;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.right-top {
+    background-color: palevioletred;
+    grid-area: right-top;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.right-bottom {
+    background-color: lightseagreen;
+    grid-area: right-bottom;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.center {
+    background-color: tan;
+    grid-area: center;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.top-center-1 {
+    background-color: lavender;   
+    grid-area: top-center-1;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.top-center-2 {
+    background-color: blanchedalmond;
+    grid-area: top-center-2;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.bottom-center-1 {
+    background-color: coral;
+    grid-area: bottom-center-1;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.bottom-center-2 {
+    background-color: mediumpurple;
+    grid-area: bottom-center-2;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.circle {
+    height: 100%;
+    width: 50%;
+    background: radial-gradient(rgb(255, 243, 245), rgb(255, 143, 162));
+    border-radius: 50%;
+    margin: auto;
+}
