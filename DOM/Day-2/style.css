@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bulb {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+button {
+    padding: 20px 40px;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: none;
+}
+
+.lightUp {
+    background-color: yellow;
+}
