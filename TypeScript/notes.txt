@@ -1,0 +1,30 @@
+TypeScript - superset of JS
+
+To make JS perform in static type as dynamic is not long-term supportive.
+
+TS does not compile. JS does.
+
+
+TS:
+Source Code > 
+Lexar (scanning and creating tokens) > 
+Parser (tokens to AST - Abstract Syntax Tree) > 
+Binder (AST - tree using mesh) > 
+Checker (type check)> 
+Transformer (makes code compatible between old and new version of code) > 
+JS (actually compiles)
+
+Why TS?
+- big project...
+
+
+
+Commands:
+npm init -y
+npm i -D typescript
+npx tsc --init
+npm i tsx -D
+npm install --sav-dev nodemon
+npm run dev
+
+Watch: npx tsc -w
